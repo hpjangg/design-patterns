@@ -8,7 +8,7 @@ import strategy.duck.behavior.quack.Quack;
 import strategy.duck.behavior.quack.Squeak;
 import strategy.duck.duck.*;
 
-public class DuckMain {
+public class DuckTests {
 
     public static void main(String[] args) {
         Duck mallardDuck = new MallardDuck(new FlyWithWings(), new Quack());
