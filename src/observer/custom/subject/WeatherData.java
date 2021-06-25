@@ -22,6 +22,9 @@ public class WeatherData implements Subject {
         observerList.remove(observer);
     }
 
+    /**
+     * 순서 보장됨.
+     */
     @Override
     public void notifyObservers() {
         observerList.forEach(observer -> observer.update(this.temperature, this.humidity, this.pressure));
